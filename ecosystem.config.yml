@@ -1,0 +1,16 @@
+---
+apps:
+  - name: cobalt
+    script: src/cobalt.js
+    cwd: ./
+    max_restarts: 10
+    restart_delay: 10000
+    interpreter : node@18.18.2
+    env:
+      PORT: 3200
+      NODE_ENV: production
+      apiURL: http://77.120.21.10:3201/
+      apiPort: 3201
+      apiName: local
+      cors: 0
+
